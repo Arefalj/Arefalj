@@ -1,0 +1,45 @@
+﻿@page "/"
+@inject NavigationManager NavManager
+
+
+
+<style>
+    body {
+        background-image: url('Shop.jpg');
+
+        background-repeat: no-repeat;
+
+        background-attachment: fixed;
+
+        background-size: cover;
+
+    }
+    .goToShopButton{
+        text-align: center;
+
+    }
+</style>
+
+<br><br><br><br><br><br>
+
+
+<body>
+    <h2 style="text-align:center; background-color: gray; "> Welcome to Hoddie Shop</h2>
+</body>
+
+<br><br><br>
+<div class="goToShopButton">
+    <button class="btn btn-danger btn-lg" @onclick="() => goToShop()"> Go to Shop</button>
+</div>
+
+
+@code{
+    public void goToShop()
+
+
+    {
+        NavManager.NavigateTo("products");
+
+
+    }
+}

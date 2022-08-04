@@ -1,0 +1,116 @@
+@page "/products"
+@using lastproject
+@using lastproject.Client.Models
+@using lastproject.Shared.Models
+@inject NavigationManager NavManager
+
+<style>
+    body {
+        background-image: url('Shop.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+    }
+</style>
+
+
+
+<table class="table" style="background-color: gray;border: 1px solid #ddd;
+  padding: 8px; ;">
+    
+        <tr style="text-align: center; font-size: 35px;">
+            <th>picture</th>
+            <th>Name</th>
+            <th>count</th>
+            <th>price</th>
+            <th>Number</th>
+            <th>add</th>
+            <th>remove</th>
+        </tr>
+@foreach (var item in Clothes)
+{
+    <tr  style="text-align: center; font-size: 27px;width: 50px; height: 50px;">
+        <td><img style="width: 300px ;height: 360px;" src=" @item.Link"></td>
+        <td>@item.Name</td>
+        <td>@item.count</td>
+        <td>@item.Price</td>
+        <td>@item.number</td>
+        <td> <button class="btn btn-dark" @onclick="() => Increase(item)"> Add </button> </td>
+
+            @if (item.number == 0)
+            {
+                <td> <button class="btn btn-dark" @onclick="() => Remove(item)"> Remove </button> </td>
+            }
+            else
+            {
+                <td> <button class="btn btn-dark" @onclick="() => Reduce(item)"> Remove </button> </td>
+            }
+    </tr> 
+} 
+   
+</table>
+
+
+
+<br><br>
+<h2 style="color:white;background-color: black; text-align:center;"> Total price:   @HC.Price() ریال </h2>
+
+<br>
+
+
+
+
+<button style="text-align:center;" @onclick="() => Update()" class="btn btn-dark"> Finish </button>
+<br><br>
+
+    
+
+@code
+{
+    public void add(Clothe item)
+    {
+        if (HC.HCClothes.Contains(item))
+        {
+            item.number++;
+        }
+        else
+        {
+            HC.HCClothes.Add(item);
+            item.number++;
+        }
+    }
+    public async Task Update()
+    {
+        foreach (var item in HC.HCClothes)
+            item.count -= item.number;
+        var URL = @"https://e99521478.herokuapp.com/api/Clothe/updateDB";
+        await client.PutAsJsonAsync<List<Clothe>>(URL, HC.HCClothes);
+        StateHasChanged();
+        NavManager.NavigateTo("/final");
+    }
+    List<Clothe> Clothes { get; set; } = new List<Clothe>();
+
+    HttpClient client = new HttpClient();
+    protected override async Task OnInitializedAsync()
+    {
+        var URL = @"https://e99521478.herokuapp.com/api/Clothe/getClothes";
+        Clothes = await client.GetFromJsonAsync<List<Clothe>>(URL);
+        StateHasChanged();
+        
+    }
+    public void Increase(Clothe item)
+    {
+        add(item);
+        
+    }
+
+    public void Reduce(Clothe item)
+    {
+        item.number--;
+    }
+
+    public void Remove(Clothe item)
+    {
+        HC.HCClothes.Remove(item);
+    }
+}
