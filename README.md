@@ -40,12 +40,7 @@
 ###
 
 <div align="center">
-  <a href="https://instagram.com/aref_alj" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
-  </a>
-  <a href="https://www.twitch.tv/arefalj" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="twitch logo"  />
-  </a>
+
   <a href="https://discord.gg/MqeahSudD7" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo"  />
   </a>
@@ -59,20 +54,14 @@
 
 ###
 
-<img align="right" height="150" src="https://i.imgflip.com/65efzo.gif"  />
 
 ###
 
-<div align="center">
-  <a href="https://open.spotify.com/user/3136yrpenfhcja5gxubbtls4mwzi">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=3136yrpenfhcja5gxubbtls4mwzi&count=5&unique=true" alt="Spotify recently played"  />
-  </a>
-</div>
+
 
 ###
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/Arefalj/Arefalj/output/snake.svg" alt="Snake animation" />
 
 ###
