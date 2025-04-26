@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! My name is Aref Alijannezhad and I'm a Junior Front-end developer, Student at Iran University of Science and Technology</h2>
+<h2 align="left">Hi 👋! My name is Aref Alijannezhad and I'm a Front-end developer, Student at Iran University of Science and Technology</h2>
 
 ###
 
