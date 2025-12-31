@@ -1,12 +1,12 @@
 <h2 align="left">Hi there! 👋 I'm Aref, a passionate Front-End Developer & QA Engineer with a strong focus on building intuitive, high-performance web applications. I specialize in using modern technologies like ReactJS, Next.js, Tailwind CSS, and Redux, and I'm always striving to enhance user experiences. I also have a solid foundation in testing, applying ISTQB methodologies, and automating tests using Pytest and Vitest
 </h2><h3>
 I’m the co‑founder of Youzpal, an online currency exchange platform that enables secure, fast, and user‑centric peer‑to‑peer foreign exchange transactions for global users. At Youzpal, I help drive the technical vision and build features that make international currency exchange more accessible and reliable.</h3>
-###
+<!-- ###
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Arefalj&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Arefalj&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
-</div>
+</div> -->
 
 
 <div align="center">
