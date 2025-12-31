@@ -1,6 +1,6 @@
-<h2 align="left">Hi there! 👋 I'm Aref, a passionate Front-End Developer & QA Engineer with a strong focus on building intuitive, high-performance web applications. I specialize in using modern technologies like ReactJS, Next.js, Tailwind CSS, and Redux, and I'm always striving to enhance user experiences. I also have a solid foundation in testing, applying ISTQB methodologies, and automating tests using Pytest and Vitest.</h2>
-
-<h2 align="left">I’m the co‑founder of Youzpal, an online currency exchange platform that enables secure, fast, and user‑centric peer‑to‑peer foreign exchange transactions for global users. At Youzpal, I help drive the technical vision and build features that make international currency exchange more accessible and reliable.</h2>
+<h2 align="left">Hi there! 👋 I'm Aref, a passionate Front-End Developer & QA Engineer with a strong focus on building intuitive, high-performance web applications. I specialize in using modern technologies like ReactJS, Next.js, Tailwind CSS, and Redux, and I'm always striving to enhance user experiences. I also have a solid foundation in testing, applying ISTQB methodologies, and automating tests using Pytest and Vitest
+  
+I’m the co‑founder of Youzpal, an online currency exchange platform that enables secure, fast, and user‑centric peer‑to‑peer foreign exchange transactions for global users. At Youzpal, I help drive the technical vision and build features that make international currency exchange more accessible and reliable.</h2>
 ###
 
 <div align="center">
